@@ -7,7 +7,11 @@ class Monster:
         self.attack = attack
         self.agility = agility
         self.common = common
-        self.allstats = {'Class': f'{monster}', 'Initative': f'{initative}', 'Endurance': f'{endurance}', 'Attack': f'{attack}', 'Agility': f"{agility}", "Common": f"{common}"}
+        self.monster_stats = {'Class': f'{monster}', 'Initative': f'{initative}', 'Endurance': f'{endurance}', 'Attack': f'{attack}', 'Agility': f"{agility}", "Common": f"{common}"}
+
+def monster_stats(self):
+    monster_stats = self.__dict__
+    return monster_stats
 
 class GiantSpider(Monster):
     def __init__(self):
