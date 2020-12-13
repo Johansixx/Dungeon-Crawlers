@@ -30,13 +30,12 @@ class Troll(Monster):
         super().__init__('Troll', 2, 4, 7, 2, 0.05)
 
 
-shuffle_spider =[str(GiantSpider), "No monster"]
-shuffle_skeletton = [str(Skeletton), "No Monster"]
-shuffle_orc = [str(Orc), "No Monster"]
-shuffle_troll = [str(Troll), "No monster"]
-
-
 def random_monsters():
+    shuffle_spider =[str(GiantSpider), "No monster"]
+    shuffle_skeletton = [str(Skeletton), "No Monster"]
+    shuffle_orc = [str(Orc), "No Monster"]
+    shuffle_troll = [str(Troll), "No monster"]
+
     random_spider = random.choices(shuffle_spider, weights=[20, 80], k=1)
     random_skeletton = random.choices(shuffle_skeletton, weights=[15, 85], k=1)
     random_orc = random.choices(shuffle_orc, weights=[10, 90], k=1)
@@ -50,29 +49,34 @@ class Treasures:
         self.value = value
 
 
-coins = Treasures("Coins", 2)
+'''coins = Treasures("Coins", 2)
 money_pouch = Treasures("Money pouch", 6)
 gold_jewelry = Treasures("Gold Jewelry", 10)
 gems = Treasures("Gems", 14)
-small_treasure_chest = Treasures("Small treasure chest", 20)
-
-
-shuffle_coins = [str(coins.treasure), "No Treasure"]
-shuffle_money_pouch = [str(money_pouch.treasure), "No Treasure"]
-shuffle_gold_jewelry = [str(gold_jewelry.treasure), "No Treasure"]
-shuffle_gems = [str(gems.treasure), "No Treasure" ]
-shuffle_small_treasure_chest = [str(small_treasure_chest.treasure), "No Treasure"]
+small_treasure_chest = Treasures("Small treasure chest", 20)'''
 
 
 def random_treasurs():
+    coins = Treasures("Coins", 2)
+    money_pouch = Treasures("Money pouch", 6)
+    gold_jewelry = Treasures("Gold Jewelry", 10)
+    gems = Treasures("Gems", 14)
+    small_treasure_chest = Treasures("Small treasure chest", 20)
 
-        random_coins = random.choices(shuffle_coins, weights=[40, 60], k=1)
-        random_money_pouch = random.choices(shuffle_money_pouch, weights=[20, 80], k=1)
-        random_gold_jewelry = random.choices(shuffle_gold_jewelry, weights=[15, 85], k=1)
-        random_gems = random.choices(shuffle_gems, weights=[10, 90], k=1)
-        random_treasure_chest = random.choices(shuffle_small_treasure_chest, weights=[5, 95], k=1)
-        print(random_coins + random_money_pouch + random_gold_jewelry + random_gems + random_treasure_chest)
+    shuffle_coins = [str(coins.treasure), "No Treasure"]
+    shuffle_money_pouch = [str(money_pouch.treasure), "No Treasure"]
+    shuffle_gold_jewelry = [str(gold_jewelry.treasure), "No Treasure"]
+    shuffle_gems = [str(gems.treasure), "No Treasure" ]
+    shuffle_small_treasure_chest = [str(small_treasure_chest.treasure), "No Treasure"]
+
+    random_coins = random.choices(shuffle_coins, weights=[40, 60], k=1)
+    random_money_pouch = random.choices(shuffle_money_pouch, weights=[20, 80], k=1)
+    random_gold_jewelry = random.choices(shuffle_gold_jewelry, weights=[15, 85], k=1)
+    random_gems = random.choices(shuffle_gems, weights=[10, 90], k=1)
+    random_treasure_chest = random.choices(shuffle_small_treasure_chest, weights=[5, 95], k=1)
+    print(random_coins + random_money_pouch + random_gold_jewelry + random_gems + random_treasure_chest)
 
 
-random_monsters()
+# random_monsters()
 random_treasurs()
+
