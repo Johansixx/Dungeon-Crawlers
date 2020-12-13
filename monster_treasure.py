@@ -49,13 +49,6 @@ class Treasures:
         self.value = value
 
 
-'''coins = Treasures("Coins", 2)
-money_pouch = Treasures("Money pouch", 6)
-gold_jewelry = Treasures("Gold Jewelry", 10)
-gems = Treasures("Gems", 14)
-small_treasure_chest = Treasures("Small treasure chest", 20)'''
-
-
 def random_treasurs():
     coins = Treasures("Coins", 2)
     money_pouch = Treasures("Money pouch", 6)
